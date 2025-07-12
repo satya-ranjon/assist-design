@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f0f4f8;
+}
+.sidebar {
+  height: 100vh;
+  background: #012040 !important;
+  width: 280px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+.hide-sidebar {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sidebar.show-sidebar {
+    width: 280px !important;
+    min-width: 180px !important;
+    padding: initial;
+    border: initial;
+  }
+  #sidebarMenu {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: #012040 !important;
+    z-index: 1050;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav-pills .nav-link {
+  color: #b0c6db !important;
+}
+.nav-pills .nav-link .icon {
+  width: 24px;
+  height: 24px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #092e55;
+  color: #ffffff !important;
+}
+.sidebar-control {
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #e6e6e8;
+  z-index: 1200;
+  position: fixed;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-control.right-0 {
+  left: 266px !important;
+}
+@media (max-width: 991.98px) {
+  .sidebar-control {
+    top: 70px;
+    left: 20px;
+    position: fixed !important;
+    z-index: 1200;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.search-input {
+  width: 492px;
+}
+@media (max-width: 991.98px) {
+  .sidebar-control {
+    right: -297px;
+  }
+  .search-input {
+    width: 100%;
+  }
+}
+.sidebar-control img {
+  width: 10px;
+  height: 13px;
+}
+
+.right-0 {
+  right: -30px !important;
+}
+
+.btn.btn-outline-primary {
+  font-weight: 500;
+  border: 1px solid #0eace4;
+  color: #0eace4;
+  height: 32px;
+  padding: 0 16px;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #0eace4;
+  color: #ffffff;
+}

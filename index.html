@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout d-flex w-100 flex-shrink-0">
+      <div class="position-relative" style="width: fit-content; z-index: 9999">
+        <div class="sidebar-control position-absolute" id="sidebarToggle">
+          <img src="./images/icons/arrow.svg" alt="arrow" />
+        </div>
+        <div class="d-flex flex-column flex-shrink-0 sidebar" id="sidebarMenu">
+          <a href="/" class="d-flex align-items-center p-3">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <ul class="nav nav-pills flex-column mb-auto mt-3 ps-3">
+            <!-- ...existing code... -->
+            <li>
+              <a
+                href="#"
+                class="nav-link gap-3 py-3 d-flex align-items-center active"
+              >
+                <img
+                  src="./images/icons/icon (9).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (6).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Clients</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (8).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Agencies</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (7).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Agents</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (5).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Sales Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (4).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> New Travel Quote</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (3).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Quotes Details</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link gap-3 py-3 d-flex align-items-center"
+                aria-current="page"
+              >
+                <img
+                  src="./images/icons/icon (2).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Standing Quote </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link gap-3 py-3 d-flex align-items-center">
+                <img
+                  src="./images/icons/icon (10).svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span> Reports</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-100">
+        <header
+          class="d-flex align-items-center bg-white justify-content-center justify-content-md-between py-3"
+        >
+          <div class="w-100 d-flex justify-content-center align-items-center">
+            <div class="position-relative search-input">
+              <input
+                type="search"
+                class="form-control form-control-dark rounded-pill ps-5"
+                style="height: 48px"
+                placeholder="Search for..."
+                aria-label="Search"
+              />
+              <img
+                src="./images/icons/search.svg"
+                alt="search"
+                class="position-absolute"
+                style="left: 15px; top: 14px; width: 20px; height: 20px"
+              />
+            </div>
+          </div>
+
+          <div
+            style="width: fit-content"
+            class="col-md-3 text-end px-2 px-md-4 d-flex align-items-center justify-content-end gap-2 gap-md-3"
+          >
+            <img src="./images/icons/rounded-icon.svg" alt="rounded" />
+            <div class="position-relative">
+              <img src="./images/icons/notification.svg" alt="notification" />
+              <span
+                class="position-absolute d-flex justify-content-center align-items-center"
+                style="
+                  top: 0;
+                  background-color: brown;
+                  color: white;
+                  border-radius: 50%;
+                  font-size: 12px;
+                  right: -5px;
+                  width: 17px;
+                  height: 17px;
+                "
+              >
+                9</span
+              >
+            </div>
+            <div class="dropdown text-end">
+              <a
+                href="#"
+                class="d-block link-dark text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+              </a>
+              <ul
+                class="dropdown-menu text-small"
+                aria-labelledby="dropdownUser1"
+              >
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="d-flex justify-content-between align-items-center p-3">
+          <div class="">
+            <h5 class="p-0 m-0" style="font-weight: 600; font-size: 18px">
+              Dashboard
+            </h5>
+            <p class="p-0 m-0" style="color: #4b647e; font-size: 13px">
+              Monitor key performance of Product and Agency sales
+            </p>
+          </div>
+          <div class="d-flex gap-3">
+            <button type="button" class="btn btn-outline-primary rounded-pill">
+              Filter by
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-pill">
+              This Year
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var toggle = document.getElementById("sidebarToggle");
+        var sidebar = document.getElementById("sidebarMenu");
+        function handleSidebarToggle() {
+          if (window.innerWidth <= 991.98) {
+            if (sidebar.classList.contains("show-sidebar")) {
+              sidebar.classList.remove("show-sidebar");
+            } else {
+              sidebar.classList.add("show-sidebar");
+            }
+          } else {
+            sidebar.classList.toggle("hide-sidebar");
+          }
+          toggle.classList.toggle("right-0");
+        }
+        toggle.addEventListener("click", handleSidebarToggle);
+      });
+    </script>
+  </body>
+</html>
