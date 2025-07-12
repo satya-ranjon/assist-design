@@ -1,3 +1,38 @@
+/* Converted from inline styles in index.html */
+.bg-sales-target {
+  min-width: 260px;
+  background-color: #f4f8ed !important;
+}
+.progress-sales-target {
+  height: 12px !important;
+  background: #e9f5e5 !important;
+}
+.progress-bar-sales-target {
+  width: 80% !important;
+  background: #7ac142 !important;
+}
+.sales-target-labels {
+  font-size: 13px;
+  color: #4b647e;
+}
+.trip-card {
+  background: #fff;
+  padding: 0.5rem 0.75rem 1.5rem 1rem;
+  border-radius: 0.5rem;
+  min-height: 100px;
+}
+.trip-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+.trip-amount {
+  font-weight: 600;
+  font-size: 15px;
+}
+.trip-total {
+  color: #4b647e;
+  font-size: 13px;
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
@@ -118,4 +153,58 @@ body {
 .btn.btn-outline-primary:hover {
   background-color: #0eace4;
   color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .top-sales-target {
+    width: 100% !important;
+  }
+}
+
+.selling-plan-card {
+}
+.selling-plan-card h1 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #b3cee9;
+  line-height: 110%;
+}
+.selling-plan-card h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 140%;
+}
+.selling-plan-card p {
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #7492b1;
+}
+.selling-plan-card span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #131313;
+  background: #7cc249;
+  padding: 4px 8px;
+  border-radius: 17px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.w-xl-70 {
+  width: 70% !important;
+}
+
+@media (max-width: 1200px) {
+  .w-xl-70 {
+    width: 100% !important;
+  }
+}
+
+.content-box {
+  height: 100vh;
+  overflow-y: auto;
 }
