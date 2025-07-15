@@ -162,7 +162,7 @@
                   top: 0;
                   background-color: brown;
                   color: white;
-                  borderradius: 50%;
+                  border-radius: 50%;
                   font-size: 12px;
                   right: -5px;
                   width: 17px;
@@ -1515,16 +1515,26 @@
         var toggle = document.getElementById("sidebarToggle");
         var sidebar = document.getElementById("sidebarMenu");
         function handleSidebarToggle() {
-          if (window.innerWidth <= 991.98) {
-            if (sidebar.classList.contains("show-sidebar")) {
+          var isMobile = window.innerWidth <= 991.98;
+          var sidebarOpen;
+          if (isMobile) {
+            sidebarOpen = sidebar.classList.contains("show-sidebar");
+            if (sidebarOpen) {
               sidebar.classList.remove("show-sidebar");
             } else {
               sidebar.classList.add("show-sidebar");
             }
           } else {
             sidebar.classList.toggle("hide-sidebar");
+            sidebarOpen = !sidebar.classList.contains("hide-sidebar");
           }
           toggle.classList.toggle("right-0");
+          // Invert arrow when sidebar is open
+          if (sidebarOpen) {
+            toggle.classList.add("inverted-arrow");
+          } else {
+            toggle.classList.remove("inverted-arrow");
+          }
         }
         toggle.addEventListener("click", handleSidebarToggle);
 

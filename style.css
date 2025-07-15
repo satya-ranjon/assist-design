@@ -23,7 +23,7 @@
 }
 .trip-title {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .trip-amount {
   font-weight: 600;
@@ -137,6 +137,11 @@ body {
 .sidebar-control img {
   width: 10px;
   height: 13px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-control.inverted-arrow img {
+  transform: rotate(180deg);
 }
 
 .right-0 {
